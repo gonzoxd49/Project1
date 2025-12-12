@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+    <h1>Timesheet Dashboard</h1>
+    {% if entries %}
+        <ul>
+            {% for entry in entries %}
+                <li>{{ entry.date }} - {{ entry.task }}: {{ entry.hours }} hours</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No entries yet. Add one!</p>
+    {% endif %}
+{% endblock %}
