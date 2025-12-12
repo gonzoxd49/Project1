@@ -1,9 +1,0 @@
-{% extends 'base.html' %}
-{% block content %}
-    <h1>Expense History</h1>
-    <ul>
-        {% for expense in expenses %}
-            <li>{{ expense.item }}: ${{ expense.amount }}</li>
-        {% endfor %}
-    </ul>
-{% endblock %}

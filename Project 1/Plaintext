@@ -1,9 +1,0 @@
-petty_cash_app/
-├── app.py
-├── requirements.txt
-├── README.md
-└── templates/
-    ├── base.html       (Navbar & Footer)
-    ├── index.html      (Dashboard)
-    ├── log_expense.html (Page 1: Input Form)
-    └── history.html    (Page 2: List of expenses)
