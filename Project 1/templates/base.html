@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Petty Cash Tracker</title>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Dashboard</a> | 
+        <a href="{{ url_for('log_expense') }}">Log Expense</a> | 
+        <a href="{{ url_for('history') }}">History</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+    <hr>
+    <footer>Petty Cash App © 2025</footer>
+</body>
+</html>
